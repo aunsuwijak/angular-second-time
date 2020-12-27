@@ -1,0 +1,10 @@
+<input name="filter" (input)="filterChange($event)" />
+
+<table>
+  <tr>
+    <th>Filtered Categories</th>
+  </tr>
+  <tr *ngFor="let category of filteredCategories">
+    <td>{{category}}</td>
+  </tr>
+</table>
